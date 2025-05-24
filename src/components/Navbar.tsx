@@ -155,7 +155,7 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       <div
         className={`transform transition-all duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0 opacity-100 visible' : 'translate-x-full opacity-0 invisible'} md:hidden fixed top-20 right-0 bottom-0 w-full bg-white/95 backdrop-blur-lg`}>
-        <div className="px-4 pt-4 pb-6 space-y-4">
+        <div className=" bg-white/95 backdrop-blur-lg px-4 pt-4 pb-6 space-y-4">
           {navLinks.map((link) => (
             <Link
               key={link.name}
