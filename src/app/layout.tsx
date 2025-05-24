@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   title: "Cing Haji Travel dan Umroh",
   description: "Biro perjalanan umroh dan haji terpercaya dengan legalitas lengkap dan pelayanan profesional",
   icons: {
-    icon: '/logo-cinghaji.ico',
+    icon: '/favicon.png',
   },
-};
+};  
 
 export default function RootLayout({
   children,

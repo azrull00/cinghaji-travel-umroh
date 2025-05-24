@@ -6,6 +6,7 @@ import Schedule from '@/components/Schedule';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
 
+
 export default function Home() {
   return (
     <main>
