@@ -4,23 +4,23 @@ import { useState } from 'react';
 
 const faqItems = [
   {
-    question: "A. Apa Bedanya Haji Khusus dan Haji Reguler ?",
+    question: "Apa Bedanya Haji Khusus dan Haji Reguler ?",
     answer: "Haji Khusus (ONH Plus) diselenggarakan oleh travel haji resmi (swasta) dengan fasilitas eksklusif hotel bintang 5, dengan masa tunggu 5 hingga 8 tahun. Haji Reguler diselenggarakan oleh pemerintah dengan cara mendaftar ke bank syariah, fasilitas ekonomis, waktu tunggu biasanya lebih dari 15 tahun."
   },
   {
-    question: "B. Bagaimana Alur Pendaftaran Haji Khusus ?",
+    question: "Bagaimana Alur Pendaftaran Haji Khusus ?",
     answer: "1. Menyerahkan dokumen yang disebutkan pada syarat pendaftaran diatas\n2. Melunasi Uang muka (DP) sebesar USD4.500\n3. Jamaah Mendapat Bukti Kwitansi dari Cing Haji Travel\n4. Proses Input data ke sistem Siskohat Departemen Agama RI.\n5. Alhijaz setor uang pangkal ke Rekening Menteri Agama RI.\n6. Kurang Lebih 2 pekan Calon Jamaah Haji mendapat lembar BPIH (Bukti Pembayaran Ibadah Haji) yg diterbikan oleh Bank Syariah.\n7. Di lembar surat BPIH tercantum Nomor Porsi / thaun keberangkatan serrta nomor SPPH (Surat Pendaftaran Pergi Haji."
   },
   {
-    question: "C. Apa yang dimaksud dengan Haji Tamattu ?",
+    question: "Apa yang dimaksud dengan Haji Tamattu ?",
     answer: "Hampir semua travel haji Indonesia melaksanakan haji dengan niat haji tamattu. Haji Tamattu adalah mendahulukan pelaksanaan Umroh lalu kemudian Haji"
   },
   {
-    question: "D. Apakah Saya bisa berangkat Haji Plus tahun depan ?",
+    question: "Apakah Saya bisa berangkat Haji Plus tahun depan ?",
     answer: "Kemungkinan kecil bisa langsung berangkat, karena pada umumnya masa tunggu haji khusus adalah 5 – 8 tahun. Itu sudah jauh lebih cepat dibanding haji reguler (pemerintah)"
   },
   {
-    question: "E. Berapa tahun masa tunggu Haji Khusus CingHaji ?",
+    question: "Berapa tahun masa tunggu Haji Khusus CingHaji ?",
     answer: "Masa tunggu sekitar 5 hingga 8 Tahun. Masa tunggu juga dapat di cek melalui website Kementerian Agama Republik Indonesia."
   }
 ];
