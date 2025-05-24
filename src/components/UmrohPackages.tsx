@@ -9,48 +9,48 @@ const tabs = [
     content: (
       <div className="space-y-6">
         <h3 className="text-2xl font-semibold text-blue-900 mb-4">A. Persyaratan Dokumen Umroh</h3>
-        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-200">
-          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+        <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
             <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <span className="text-gray-700 text-lg">Paspor Asli 48 halaman (minimal nama 3 kata dan masa berlaku 12 bulan dari tanggal keberangkatan).</span>
         </div>
-        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-200">
-          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+        <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
             <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <span className="text-gray-700 text-lg">Fotocopy KTP berukuran A4 & Kartu Keluarga.</span>
         </div>
-        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-200">
-          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+        <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
             <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <span className="text-gray-700 text-lg">Fotocopy Buku Nikah (bagi pasangan suami istri).</span>
         </div>
-         <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-200">
-          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+        <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
             <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <span className="text-gray-700 text-lg">Pas Photo ukuran 4x6 sebanyak 3 lembar (background foto warna putih dengan fokus wajah 80%). Dibelakang foto harap dituliskan nama lengkap sesuai Paspor.</span>
         </div>
-         <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-200">
-          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+        <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
             <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <span className="text-gray-700 text-lg">Buku Kuning Suntik Meningitis (berlaku hingga tanggal kepulangan).</span>
         </div>
-         <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-200">
-          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+        <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
             <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -66,7 +66,7 @@ const tabs = [
             <p className="text-gray-700 text-md leading-relaxed">Dokumen bisa dikirimkan dengan jasa ekspedisi dengan asuransi ke alamat CH Tour Travel, harap dicantumkan nama PIC nya dan tanggal keberangkatan.</p>
 
             <p className="text-gray-700 text-lg leading-relaxed"><strong>Siapakah yang akan memproses visa? Dan kapan waktu untuk proses visa?</strong></p>
-            <p className="text-gray-700 text-md leading-relaxed">Proses visa akan dilakukan oleh CH Tour Travel setelah kami menerima seluruh persyaratan dokumen atau paling cepat 4 minggu sebelum keberangkatan.</p>
+            <p className="text-gray-700 text-md leading-relaxed">Proses visa will be done by CH Tour Travel after we receive all required documents or at least 4 weeks before departure.</p>
         </div>
       </div>
     )
@@ -153,8 +153,8 @@ const tabs = [
         <h3 className="text-2xl font-semibold text-blue-900 mb-4">C. MANASIK</h3>
         <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
           <div className="space-y-4">
-            <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
@@ -164,8 +164,8 @@ const tabs = [
                 <p className="text-gray-600">Manasik akan dilaksanakan 2 (dua) – 4 (empat) minggu sebelum keberangkatan</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2 sm:mb-0">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -251,9 +251,19 @@ export default function UmrohPackages() {
             ))}
           </div>
 
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-gray-200">
-            {tabs.find((tab) => tab.id === activeTab)?.content}
+          <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+            {tabs.find(tab => tab.id === activeTab)?.content}
           </div>
+        </div>
+
+        {/* Call to Action Button */}
+        <div className="text-center mt-12 animate-fade-in delay-300">
+          <a href="#kontak" className="group inline-block">
+            <button className="bg-blue-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-75 transform hover:-translate-y-1 group-hover:shadow-2xl">
+              Konsultasi Umroh
+              <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+            </button>
+          </a>
         </div>
       </div>
     </section>

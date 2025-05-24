@@ -98,10 +98,3 @@ body {
 .glass-effect {
   @apply bg-white/10 backdrop-blur-sm;
 }
-
-/* Ensure content is below fixed header on mobile */
-@media (max-width: 767px) { /* Below md breakpoint */
-  main > *:first-child {
-    margin-top: 160px; /* Equivalent to Tailwind's mt-40 */
-  }
-}

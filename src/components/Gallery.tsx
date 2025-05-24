@@ -35,7 +35,7 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <section id="galeri" className="py-24 bg-gray-100 overflow-hidden">
+    <section id="galeri" className="py-16 md:py-24 bg-gray-100 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Galeri Perjalanan</h2>
@@ -56,7 +56,7 @@ export default function Gallery() {
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-20 bg-gradient-to-t from-black/80 to-transparent transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white z-20 bg-gradient-to-t from-black/80 to-transparent transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                 <h3 className="text-xl font-semibold mb-1">{image.title}</h3>
                 <p className="text-sm text-blue-100">Lihat Foto</p>
               </div>

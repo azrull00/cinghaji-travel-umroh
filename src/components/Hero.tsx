@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section id="beranda" className="relative min-h-screen flex items-center overflow-hidden pt-28 md:pt-0">
+    <section id="beranda" className="relative min-h-screen flex items-center overflow-hidden pt-20 md:pt-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

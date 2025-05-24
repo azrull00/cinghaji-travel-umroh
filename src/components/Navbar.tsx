@@ -48,6 +48,9 @@ export default function Navbar() {
         if (section) {
           if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
             currentActive = navLinks[index].href;
+          } else if (index === 0 && window.scrollY < section.offsetTop) {
+             // Handle case where scroll is above the first section
+            currentActive = '';
           }
         }
       });
@@ -66,16 +69,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-lg' 
-        : 'bg-transparent'
+        ? 'bg-white/60 backdrop-blur-lg shadow-lg py-2' 
+        : 'bg-transparent py-4'
     }`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="#beranda" className="flex items-center group">
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="#beranda" className="flex items-center space-x-2 group">
               <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <Image
                   src="/images/Logo/logo-cinghaji.jpg"
@@ -94,99 +97,77 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-6 lg:space-x-8">
+            <div className="ml-10 flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`relative text-lg font-medium transition-all duration-300 ${
-                    isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-100'
-                  } ${
-                    activeSection === link.href 
-                      ? isScrolled ? 'text-blue-600' : 'text-blue-100'
-                      : ''
-                  }`}
-                  scroll={true}
-                >
-                  <span className="relative">
+                  className={`relative text-gray-700 hover:text-blue-600 transition-colors text-sm uppercase font-medium tracking-wider py-2 ${activeSection === link.href ? 'text-blue-600' : ''}`}>
+                  <span className="relative group">
                     {link.name}
-                    <span className={`absolute -bottom-1 left-0 w-full h-0.5 bg-current transform origin-left transition-transform duration-300 ${
-                      activeSection === link.href ? 'scale-x-100' : 'scale-x-0'
-                    }`} />
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                   </span>
                 </Link>
               ))}
+              <a
+                href="#kontak"
+                className="relative overflow-hidden bg-blue-600 text-white px-8 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg group"
+              >
+                <span className="relative z-10 flex items-center space-x-2">
+                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <span>Kontak</span>
+                </span>
+                 <div className="absolute top-0 left-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              </a>
             </div>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="-mr-2 flex md:hidden">
+          <div className="md:hidden">
             <button
-              onClick={toggleMenu}
-              className={`inline-flex items-center justify-center p-2 rounded-md transition-colors duration-200 ${
-                isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600 hover:bg-gray-100' 
-                  : 'text-white hover:text-blue-100 hover:bg-white/10'
-              }`}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors focus:outline-none"
+              aria-label="Buka menu"
             >
-              <span className="sr-only">Open main menu</span>
-              {/* Hamburger Icon */}
-              <svg
-                className={`${isMenuOpen ? 'hidden' : 'block'} h-7 w-7 transition-transform duration-300 ease-in-out`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              {/* Close Icon */}
-              <svg
-                className={`${isMenuOpen ? 'block' : 'hidden'} h-7 w-7 transition-transform duration-300 ease-in-out rotate-90`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <div className="relative w-6 h-6">
+                <span className={`absolute left-0 block w-full h-0.5 bg-current transform transition-all duration-300 ${isMenuOpen ? 'rotate-45 top-3' : 'top-1'}`}></span>
+                <span className={`absolute left-0 block w-full h-0.5 bg-current transform transition-all duration-300 top-3 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                <span className={`absolute left-0 block w-full h-0.5 bg-current transform transition-all duration-300 ${isMenuOpen ? '-rotate-45 top-3' : 'top-5'}`}></span>
+              </div>
             </button>
           </div>
         </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
-      <div 
-        className={`md:hidden transition-all duration-300 ease-in-out transform ${
-          isMenuOpen 
-            ? 'opacity-100 translate-y-0' 
-            : 'opacity-0 -translate-y-2 pointer-events-none'
-        }`}
-      >
-        <div className={`px-2 pt-2 pb-4 space-y-1 sm:px-3 ${
-          isScrolled ? 'bg-white shadow-lg' : 'bg-gray-900/95 backdrop-blur-md'
-        }`}>
+      <div
+        className={`transform transition-all duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0 opacity-100 visible' : 'translate-x-full opacity-0 invisible'} md:hidden fixed top-20 right-0 bottom-0 w-full bg-white/95 backdrop-blur-lg`}>
+        <div className="px-4 pt-4 pb-6 space-y-4 bg-white/95 backdrop-blur-lg">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600 hover:bg-gray-100' 
-                  : 'text-white hover:text-blue-100 hover:bg-white/10'
-              } ${
-                activeSection === link.href 
-                  ? isScrolled ? 'text-blue-600 bg-gray-100' : 'text-blue-100 bg-white/10'
-                  : ''
-              }`}
-              scroll={true}
+              className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm uppercase font-medium tracking-wider"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}
             </Link>
           ))}
+            <a
+            href="https://wa.me/6281225852454"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-6 mx-4 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            <div className="flex items-center justify-center space-x-2">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                 <path d="M12 2C6.486 2 2 6.486 2 12c0 1.825.494 3.535 1.352 5.004L2 22l5.035-1.316A9.945 9.945 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2zm0 18c-1.42 0-2.79-.369-4.006-1.072l-.277-.167-2.879.754.771-2.82-.181-.289A7.957 7.957 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
+              </svg>
+              <span>Hubungi WA</span>
+            </div>
+          </a>
         </div>
       </div>
     </nav>
