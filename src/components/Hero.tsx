@@ -34,7 +34,7 @@ export default function Hero() {
                 <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </a>
-            <a href="#kontak" className="group">
+            <a href="https://wa.me/6281298093910" target="_blank" rel="noopener noreferrer" className="group inline-block">
               <button className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-75 group-hover:shadow-2xl">
                 Konsultasi Gratis
                 <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-transform">→</span>

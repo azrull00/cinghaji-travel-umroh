@@ -110,7 +110,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <a
-                href="#kontak"
+                href="https://wa.me/6281298093910"
                 className="relative overflow-hidden bg-blue-600 text-white px-8 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg group"
               >
                 <span className="relative z-10 flex items-center space-x-2">
@@ -156,7 +156,7 @@ export default function Navbar() {
             </Link>
           ))}
             <a
-            href="https://wa.me/6281225852454"
+            href="https://wa.me/6281298093910"
             target="_blank"
             rel="noopener noreferrer"
             className="block mt-6 mx-4 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"

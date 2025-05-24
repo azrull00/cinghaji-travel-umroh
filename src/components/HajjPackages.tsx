@@ -88,9 +88,9 @@ export default function HajjPackages() {
         </div>
 
         <div className="text-center mt-12 animate-fade-in delay-300">
-          <a href="#kontak" className="group inline-block">
+          <a href="https://wa.me/6281298093910" target="_blank" rel="noopener noreferrer" className="group inline-block">
             <button className="bg-blue-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-75 transform hover:-translate-y-1 group-hover:shadow-2xl">
-              Konsultasi Haji Khusus
+              Konsultasi Haji Khusus            
               <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
             </button>
           </a>
