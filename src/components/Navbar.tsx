@@ -19,9 +19,9 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('');
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   // Close menu on resize
   useEffect(() => {
@@ -71,14 +71,14 @@ export default function Navbar() {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/60 backdrop-blur-lg shadow-lg py-2' 
+        ? 'bg-white/85 backdrop-blur-lg shadow-lg py-2' 
         : 'bg-transparent py-4'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="#beranda" className="flex items-center space-x-2 group">
+            <Link href="#beranda" className="flex items-center space-x-2 group font-bold">
               <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <Image
                   src="/images/Logo/logo-cinghaji.jpg"
