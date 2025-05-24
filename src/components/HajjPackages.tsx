@@ -74,11 +74,15 @@ export default function HajjPackages() {
                   />
                 </svg>
               </button>
-              {openIndex === index && (
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  openIndex === index ? 'max-h-screen' : 'max-h-0'
+                }`}
+              >
                 <div className="px-8 py-6 bg-gray-50 text-gray-700 leading-relaxed border-t border-gray-100">
                   <p className="whitespace-pre-line">{item.answer}</p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
