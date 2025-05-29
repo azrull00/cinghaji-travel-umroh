@@ -4,11 +4,11 @@ import { useState } from 'react';
 
 const faqItems = [
   {
-    question: "Apa Bedanya Haji Khusus dan Haji Reguler ?",
-    answer: "Haji Khusus (ONH Plus) diselenggarakan oleh travel haji resmi (swasta) dengan fasilitas eksklusif hotel bintang 5, dengan masa tunggu 5 hingga 8 tahun. Haji Reguler diselenggarakan oleh pemerintah dengan cara mendaftar ke bank syariah, fasilitas ekonomis, waktu tunggu biasanya lebih dari 15 tahun."
+    question: "Apa Bedanya Haji plus dan Haji Reguler ?",
+    answer: "Haji plus (ONH Plus) diselenggarakan oleh travel haji resmi (swasta) dengan fasilitas eksklusif hotel bintang 5, dengan masa tunggu 5 hingga 8 tahun. Haji Reguler diselenggarakan oleh pemerintah dengan cara mendaftar ke bank syariah, fasilitas ekonomis, waktu tunggu biasanya lebih dari 15 tahun."
   },
   {
-    question: "Bagaimana Alur Pendaftaran Haji Khusus ?",
+    question: "Bagaimana Alur Pendaftaran Haji plus ?",
     answer: "1. Menyerahkan dokumen yang disebutkan pada syarat pendaftaran diatas\n2. Melunasi Uang muka (DP) sebesar USD4.500\n3. Jamaah Mendapat Bukti Kwitansi dari Cing Haji Travel\n4. Proses Input data ke sistem Siskohat Departemen Agama RI.\n5. Alhijaz setor uang pangkal ke Rekening Menteri Agama RI.\n6. Kurang Lebih 2 pekan Calon Jamaah Haji mendapat lembar BPIH (Bukti Pembayaran Ibadah Haji) yg diterbikan oleh Bank Syariah.\n7. Di lembar surat BPIH tercantum Nomor Porsi / thaun keberangkatan serrta nomor SPPH (Surat Pendaftaran Pergi Haji."
   },
   {
@@ -17,10 +17,10 @@ const faqItems = [
   },
   {
     question: "Apakah Saya bisa berangkat Haji Plus tahun depan ?",
-    answer: "Kemungkinan kecil bisa langsung berangkat, karena pada umumnya masa tunggu haji khusus adalah 5 – 8 tahun. Itu sudah jauh lebih cepat dibanding haji reguler (pemerintah)"
+    answer: "Kemungkinan kecil bisa langsung berangkat, karena pada umumnya masa tunggu haji plus adalah 5 – 8 tahun. Itu sudah jauh lebih cepat dibanding haji reguler (pemerintah)"
   },
   {
-    question: "Berapa tahun masa tunggu Haji Khusus CingHaji ?",
+    question: "Berapa tahun masa tunggu Haji plus CingHaji ?",
     answer: "Masa tunggu sekitar 5 hingga 8 Tahun. Masa tunggu juga dapat di cek melalui website Kementerian Agama Republik Indonesia."
   }
 ];
@@ -29,14 +29,14 @@ export default function HajjPackages() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="haji-khusus" className="py-24 bg-gradient-to-b from-white to-gray-100 overflow-hidden">
+    <section id="haji-plus" className="py-24 bg-gradient-to-b from-white to-gray-100 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
-            Haji Khusus
+            Haji plus
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Pertanyaan Umum</h2>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto">Informasi lengkap seputar program haji khusus kami</p>
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto">Informasi lengkap seputar program haji plus kami</p>
           <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full mt-4" />
         </div>
 
@@ -90,7 +90,7 @@ export default function HajjPackages() {
         <div className="text-center mt-12 animate-fade-in delay-300">
           <a href="https://wa.me/6281298093910" target="_blank" rel="noopener noreferrer" className="group inline-block">
             <button className="bg-blue-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-75 transform hover:-translate-y-1 group-hover:shadow-2xl">
-              Konsultasi Haji Khusus            
+              Konsultasi Haji plus            
               <span className="inline-block ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
             </button>
           </a>

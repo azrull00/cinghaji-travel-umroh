@@ -5,6 +5,7 @@ import UmrohPackages from '@/components/UmrohPackages';
 import Schedule from '@/components/Schedule';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
+import Map from '@/components/Map';
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <UmrohPackages />
       <Schedule />
       <Gallery />
+      <Map />
       <Footer />
     </main>
   );

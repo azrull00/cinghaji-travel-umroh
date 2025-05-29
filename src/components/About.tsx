@@ -34,7 +34,7 @@ export default function About() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <div className="text-blue-700 text-4xl font-bold">10+</div>
+                  <div className="text-blue-700 text-4xl font-bold">20+</div>
                 </div>
                 <div className="text-gray-800 font-semibold text-lg">Tahun Pengalaman</div>
                 <p className="text-gray-600 text-sm">Melayani jamaah dengan sepenuh hati</p>

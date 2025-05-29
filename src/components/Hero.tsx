@@ -19,14 +19,16 @@ export default function Hero() {
       <div className="container mx-auto px-4 relative z-10 text-center lg:text-left">
         <div className="max-w-5xl mx-auto lg:mx-0 animate-fade-in">
           <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full">
-            <p className="text-blue-100 text-sm font-medium">Biro Perjalanan Umroh & Haji Terpercaya</p>
+            <p className="text-blue-100 text-sm font-medium"> SK Kemenag:
+              SK-Umroh No.451 Th.2020 SK-Haji No.454 Th.2020</p>
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
-            CING HAJI TOUR & TRAVEL
+          <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
+            CING HAJI TOUR & TRAVEL Bersama PT. RIHLAH ALATAS WISATA
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-10 font-light drop-shadow-sm max-w-3xl mx-auto lg:mx-0">
             Melayani Perjalanan Ibadah Anda dengan Sepenuh Hati
           </p>
+
           <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
             <a href="#paket-umroh" className="group">
               <button className="bg-white text-blue-800 px-10 py-4 rounded-full font-semibold text-lg shadow-xl hover:bg-blue-100 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-75 group-hover:shadow-2xl">
@@ -41,6 +43,7 @@ export default function Hero() {
               </button>
             </a>
           </div>
+
         </div>
       </div>
 

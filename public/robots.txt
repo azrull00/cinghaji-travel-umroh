@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.cinghaji.com
+
+# Sitemaps
+Sitemap: https://www.cinghaji.com/sitemap.xml 
