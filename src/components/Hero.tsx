@@ -23,7 +23,7 @@ export default function Hero() {
               SK-Umroh No.451 Th.2020 SK-Haji No.454 Th.2020</p>
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
-            CING HAJI TOUR & TRAVEL Bersama PT. RIHLAH ALATAS WISATA
+            CING HAJI TOUR & TRAVEL BERSAMA PT. RIHLAH ALATAS WISATA
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-10 font-light drop-shadow-sm max-w-3xl mx-auto lg:mx-0">
             Melayani Perjalanan Ibadah Anda dengan Sepenuh Hati
